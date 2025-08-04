@@ -9,7 +9,7 @@ greet();
 /////multiline arrow function/////
 let multipy =(a,b)=>{
     let result=a*b;
-    return result;
+   return result;
 }
  console.log((2,3));
 ///////one line function////
