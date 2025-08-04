@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meal Finder</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="pro.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand text-white fw-bold" href="#"><i class="fa-solid fa-house me-2"></i>MealFinder.</a>
+    <button class="btn hamburger-btn text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuDrawer">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Sidebar Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menuDrawer">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Categories</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul id="categoryList" class="list-unstyled"></ul>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero-section d-flex flex-column justify-content-center align-items-center text-center">
+  <div class="search-bar d-flex">
+    <input type="text" id="searchInput" class="form-control rounded-start" placeholder="Search recipes here ..." />
+    <button class="btn btn-search rounded-end" id="searchBtn"><i class="fas fa-search"></i></button>
+  </div>
+  <h1 class="mt-4 text-white fw-bold">What are your favorite cuisines?</h1>
+  <p class="text-white">PERSONALIZE YOUR EXPERIENCE</p>
+</section>
+
+<!-- Categories -->
+<section class="container mt-5">
+  <h2 class="text-center text-uppercase fw-bold mb-4" style="color:#ff5722;">Categories</h2>
+  <div class="row" id="allCategories"></div>
+</section>
+
+<!-- Meals Output -->
+<section class="container mt-4">
+  <div class="row" id="mealResults"></div>
+</section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="pro.js"></script>
+</body>
+</html>
