@@ -5,7 +5,6 @@ let greet = function() {
 };
 
 greet();
-
 /////multiline arrow function/////
 let multipy =(a,b)=>{
     let result=a*b;
