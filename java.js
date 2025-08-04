@@ -11,7 +11,7 @@ let multipy =(a,b)=>{
     let result=a*b;
     return result;
 }
-  console.log((2,3));
+ console.log((2,3));
 ///////one line function////
 let add = (a, b) => a + b;
 console.log(add(2, 3));
