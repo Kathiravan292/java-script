@@ -4,7 +4,7 @@ let greet = function() {
   console.log("Hello!");
 };
 
-greet(); 
+greet();
 
 /////multiline arrow function/////
 let multipy =(a,b)=>{
